@@ -54,7 +54,7 @@ This requires an extension.
 
 1. Install the extension:
    New Tab Override
-   `https://addons.mozilla.org/pt-BR/firefox/addon/new-tab-override/`
+   https://addons.mozilla.org/pt-BR/firefox/addon/new-tab-override/
 
 2. After installing:
 
@@ -64,21 +64,35 @@ This requires an extension.
      `https://raulgabrielalmeida.github.io/My-Homepage/index.html`
    * Apply changes (adjust shortcut if needed)
 
+3. Enable automatic focus (important):
+
+   In the extension settings, enable the option:
+
+   "Focus the page instead of the address bar"
+
+   This ensures the search input is focused automatically when opening a new tab.
+
 ---
 
 ## Help
 
 Common issues:
 
+* Input not focused on new tab:
+
+  * Ensure the extension option **"Focus the page instead of the address bar"** is enabled
+  * Verify the extension is active
+
 * Page not loading:
 
   * Ensure the URL is correct
-  * Prefer using the hosted version instead of a local file
+  * Prefer using the hosted version
 
 * New tab not changing:
 
   * Confirm the extension is installed and enabled
   * Verify that the custom URL is correctly configured
+
 
 ## Authors
 
