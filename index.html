@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Minha Home</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="top-section">
+      <div class="header-wrapper">
+        <div class="clock" id="clock">
+          <span id="hours">00</span>
+          <span id="minutes">00</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="date-container">
+          <div class="date" id="date">01, JANEIRO 2026</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="middle-section">
+      <form
+        action="https://www.google.com/search"
+        method="GET"
+        class="search-form"
+      >
+        <input
+          type="text"
+          name="q"
+          placeholder="Pesquisar..."
+          autocomplete="off"
+          autofocus
+        />
+      </form>
+    </main>
+
+    <footer class="bottom-section">
+      <div class="shortcuts" id="shortcuts-container"></div>
+    </footer>
+
+    <div id="context-menu" class="context-menu">
+      <ul>
+        <li id="menu-edit">Modificar</li>
+        <li id="menu-delete">Excluir</li>
+      </ul>
+    </div>
+
+    <div id="modal-overlay" class="modal-overlay">
+      <div class="modal-card">
+        <h3>Criar atalho</h3>
+
+        <div class="input-group">
+          <label>URL</label>
+          <input type="text" id="input-url" placeholder="https://" />
+        </div>
+
+        <div class="input-group">
+          <label>Imagem (Opcional)</label>
+          <input
+            type="text"
+            id="input-icon"
+            placeholder="Link direto para a imagem"
+          />
+        </div>
+
+        <div class="modal-buttons">
+          <button type="button" class="btn-cancel" id="btn-cancel">
+            Cancelar
+          </button>
+          <button type="button" class="btn-confirm" id="btn-save">
+            Concluído
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
